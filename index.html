@@ -4,15 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course</title>
+    <title>Poem Generator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com">
 </head>
 <body>
-    <i class="fa-solid fa-chess-queen"></i>
-    <h1>Hello Queen</h1>
+    <div class="poem-container" id="poem-container">
+        <!-- poem -->
+        <div class="poem-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="poem"></span>
+        </div>
+        <!-- Poet -->
+        <div class="poet-name">
+            <span id="poet"></span>
+        </div>
+        <!-- button -->
+        <div class="button-container">
+            <button class="twitter-button" id="twitter" title="tweet this">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button class="facebook-button" id="facebook" title="post this">
+                <i class="fab fa-facebook"></i>
+            </button>
+            <button id="new-poem">New Poem</button>
+        </div>
+
+    </div>
+
+    <!-- loader -->
+    <div class="loader" id="loader"></div>
     <!-- Script -->
+    <script src="quotes.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
